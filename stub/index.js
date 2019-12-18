@@ -32,6 +32,8 @@ app.get('/index|product', (req, res) => {
     res.send(pageHTML);
 });
 
-app.listen(3000, () => {
-    console.log('App is listening on port 3000');
+const portIndex = process.argv.indexOf('-p')
+const APP_PORT = portIndex !== -1 ? process.argv[portIndex + 1] : 3000
+app.listen(APP_PORT, () => {
+    console.log(`App is listening on port ${APP_PORT}`);
 })
