@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "bem-xjst": "^8.9.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
   }
 }
