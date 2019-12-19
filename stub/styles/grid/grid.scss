@@ -1,0 +1,50 @@
+.grid {
+
+  &_col-gap {
+
+    &_two-thirds {
+      margin-right: 33.33%;
+      margin-left: 33.33%;
+    }
+
+    &_full {
+      margin-right: 100%;
+      margin-left: 100%;
+    }
+
+    &_half {
+      margin-right: 50%;
+      margin-left: 50%;
+    }
+  }
+
+  &_row-gap {
+    
+    &_full {
+      margin-bottom: 100%;
+      margin-top: 100%;
+    }
+
+    &_half {
+      margin-top: 50%;
+      margin-bottom: 50%;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .grid_m-columns {
+  
+    &_12 > * {
+      display: flex;
+      flex-wrap: wrap;
+      width: (100% / 12);
+    }
+
+    &_10 > * {
+      display: flex;
+      flex-wrap: wrap;
+      width: (100% / 10);
+    }
+  } 
+}

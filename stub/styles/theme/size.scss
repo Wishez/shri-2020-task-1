@@ -1,0 +1,13 @@
+@each $sizeName, $size, $lineHeight in (
+  ('default', 8, 21),
+  ('s', 8, 21),
+  ('m', 10, 25),
+  ('l', 11, 28),
+  ('xl', 13, 34),
+  ('xxl', 16, 38),
+) {
+  .theme_size_#{$sizeName} {
+    height: #{$size}px;
+    line-height: #{$lineHeight}px;
+  }
+}

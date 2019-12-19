@@ -1,0 +1,18 @@
+@each $spaceName, $size in (
+  ('default', 3),
+  ('xxxs', 3),
+  ('xxs', 6),
+  ('xs', 9),
+  ('s', 15),
+  ('m', 18),
+  ('l', 24),
+  ('xl', 27),
+  ('xxl', 36),
+  ('xxxl', 45),
+  ('xxxxl', 51),
+  ('xxxxxl', 72),
+) {
+  .theme_space_#{$spaceName} {
+    padding: #{$size}px;
+  }
+}

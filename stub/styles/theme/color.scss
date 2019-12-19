@@ -1,0 +1,21 @@
+@each $themeName, $baseBackgroundColor, $accentColor, $borderColor, $baseTextColor, $secondColor, $additionalColor, $linkColor in (
+  ('default', $white, $yellow, $black, $black, $paleBlack, $superPaleBlack, $blue),
+  ('brand', $blue, $white, $white, $white, $paleWhite, $superPaleWhite, $white),
+  ('inverse', $black, $white, $white, $white, $paleWhite, $superPaleWhite, $blue),
+  ('warning', $red, $white, $red, $white, $paleWhite, $superPaleWhite, $white),
+) {
+  .theme_color_project-#{$themeName} {
+    background-color: $baseBackgroundColor;
+    border-color: $borderColor;
+    color: $baseTextColor;
+
+    button {
+      background-color: $accentColor;
+      border-color: $borderColor;
+    }
+
+    a {
+      color: $linkColor;
+    }
+  }
+}
